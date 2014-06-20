@@ -1,0 +1,4 @@
+wget -d --header="User-Agent:Mozilla/5.0 (X11; Linux x86_64; rv:23.0) Gecko/20100101 Firefox/23.0" -e --http_proxy=96.126.101.242:8000 http://www.digikey.cn/product-search/zh?WT.z_header=search_go&lang=zh&site=cn&keywords=9670250333&x=0&y=0&formaction=on
+
+note: 测试代理用, header是表头 -d是调试 http_proxy是要测试的代理 最后加上测试网址
+        用于测试通过该代理能否成功访问该测试网址
