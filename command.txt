@@ -2,3 +2,5 @@ wget -d --header="User-Agent:Mozilla/5.0 (X11; Linux x86_64; rv:23.0) Gecko/2010
 
 note: 测试代理用, header是表头 -d是调试 http_proxy是要测试的代理 最后加上测试网址
         用于测试通过该代理能否成功访问该测试网址
+
+ln -s yy zz: 为yy创建一个软链接zz
