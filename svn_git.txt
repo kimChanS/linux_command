@@ -1,0 +1,40 @@
+svn:
+svn co address
+svn add file/dir
+svn st
+svn ci -m 'msg'
+svn revert file
+svn rm file
+svn mv old_file new_file
+
+svn diff file: 修改后的与版本库的文件的区别
+svn diff -r 2:3 file: 把版本库中第2版和第三版的区别展现
+svn diff -c 3 file: 把第三版和前一版做比较
+
+git:
+git clone out_address
+
+git config --global user.name='username'
+git config --global user.email='email'
+ssh-keygen -C 'email' -t rsa
+可以使用 ssh -v git@github.com 命令来测试链接是否畅通
+在 github.com 的界面中 选择右上角的 Account Settings，然后选择 SSH Public Keys ，选择新加。
+Title 可以随便命名，Key 的内容拷贝自 ~/.ssh/id_rsa.pub 中的内容，完成后，可以再使用 ssh -v git@github.com 进行测试。看到下面的信息表示验证成功。
+
+git init .
+git add .
+git commit -am 'msg'
+git status
+
+git branch bug_fix: 创建分支
+git checkout bug_fix: 切换到bug_fix分支
+git checkout master: 却换回主分支
+git merge bug_fix: 把bug_fix分支合并到主分支
+git branch: 列出本地所有分支
+git branch -d branchname: delete branch branchname
+git branch -m oldbranch newbranch: rename
+
+create a new repository:
+    git init
+    git remote add origin git@github.com:kimChanS/test.git
+    git push -u origin master
