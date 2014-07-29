@@ -4,3 +4,11 @@ note: 测试代理用, header是表头 -d是调试 http_proxy是要测试的代�
         用于测试通过该代理能否成功访问该测试网址
 
 ln -s yy zz: 为yy创建一个软链接zz
+
+scp
+1) 从本地复制到远程:
+    scp -r local_file remote_username@remote_ip:remote_folder
+    scp local_file remote_username@remote_ip:remote_file
+
+2) 从远程复制到本地:
+    scp -r remote_username@remote_ip:remote_folder local
