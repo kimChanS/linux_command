@@ -10,6 +10,12 @@ svn mv old_file new_file
 svn diff file: 修改后的与版本库的文件的区别
 svn diff -r 2:3 file: 把版本库中第2版和第三版的区别展现
 svn diff -c 3 file: 把第三版和前一版做比较
+svn log -lN: 查看N条log记录
+
+svn 取得外部svn资源:
+1. svn propedit svn:externals . :设置外部svn地址
+   sample: datacore svn://svn.icinfo.net/trunk/datacenter/icbase/datacore
+2. svn up即可
 
 git:
 git clone out_address
