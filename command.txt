@@ -12,3 +12,10 @@ scp
 
 2) 从远程复制到本地:
     scp -r remote_username@remote_ip:remote_folder local
+
+
+screen:
+    screen -S name 启动一个名字为name的screen
+    screen -ls 是列出所有的screen
+    screen -r name或者id，就可以回到某个screen了
+    ctrl + a + d 可以回到前一个screen，当时在当前screen运行的程序不会停止
