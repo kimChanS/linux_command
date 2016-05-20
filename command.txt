@@ -19,3 +19,6 @@ screen:
     screen -ls 是列出所有的screen
     screen -r name或者id，就可以回到某个screen了
     ctrl + a + d 可以回到前一个screen，当时在当前screen运行的程序不会停止
+
+# 删除目录下 60天 前的所有文件
+find /alidata/archive_temp/ -mtime +60 -name "*" -exec rm -f {} \;
